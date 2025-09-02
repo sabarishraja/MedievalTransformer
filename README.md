@@ -37,3 +37,8 @@ python fetch_urls.py
 
 ### 6. Fine-tune on 2nd style along with prompt for evaluation
 python train.py --input input.txt --finetune-input finetune_input.txt --batch-size 32 --context-size 256 --n-embd 384 --n-head 6 --n-layer 6 --dropout 0.2 eval --load model_finetuned.pth --prompt "WHAN that Aprille with his shoures soote, " --token-count 300 --style 0
+---
+
+Output Images
+![Result 1]()
+![Result 2]()
