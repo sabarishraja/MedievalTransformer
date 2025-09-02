@@ -40,5 +40,5 @@ python train.py --input input.txt --finetune-input finetune_input.txt --batch-si
 ---
 
 Output Images
-![Result 1]()
+![Result 1](https://github.com/sabarishraja/MedievalTransformer/blob/main/Result%201.png)
 ![Result 2]()
