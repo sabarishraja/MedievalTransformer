@@ -29,8 +29,11 @@ source .venv/bin/activate   # Linux/Mac
 ### 3. Install Dependencies
 pip install -r requirements.txt
 
-### 4. Train on Canterbury Tales
+### 4. Pre-process the datasets
+python fetch_urls.py
+
+### 5. Train on Canterbury Tales
  python train.py --input input.txt --finetune-input finetune_input.txt --batch-size 32 --context-size 256 --n-embd 384 --n-head 6 --n-layer 6 --dropout 0.2 finetune --load model.pth --save model_finetuned.pth --steps 5000 --report 500 --lr 5e-5
 
-### 5. Fine-tune on 2nd style along with prompt for evaluation
+### 6. Fine-tune on 2nd style along with prompt for evaluation
 python train.py --input input.txt --finetune-input finetune_input.txt --batch-size 32 --context-size 256 --n-embd 384 --n-head 6 --n-layer 6 --dropout 0.2 eval --load model_finetuned.pth --prompt "WHAN that Aprille with his shoures soote, " --token-count 300 --style 0
