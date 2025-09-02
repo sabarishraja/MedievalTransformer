@@ -1,7 +1,7 @@
 # 🏰 CanterburyGPT
 
 A custom **Transformer language model** (GPT-like) built from scratch in PyTorch.  
-It is trained on *The Canterbury Tales* (Middle English) and fine-tuned on a second dataset to generate text in **two distinct styles**.  
+It is trained on *The Canterbury Tales* (Middle English) and fine-tuned on a second dataset i.e. The Importance of Being Earnest (Victorian Drama Dialogue) to generate text in **two distinct styles**.  
 This project was built as part of the **Open Avenues Build Fellowship** under mentor **Kacper Raczy**.
 
 ---
